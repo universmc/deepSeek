@@ -1,76 +1,32 @@
-<p align="center">
-  <h1><center> 	🚀 Apprendre le Deep Learning à partir de zéro 🚀</h1>
-</p>
+# CoPilote
+# Références de dépôts GitHub pour le projet Copilote
+Le projet Copilote est organisé en différents dépôts GitHub pour faciliter la gestion, le développement et la collaboration. Les références de dépôts sont regroupées par rôles, projets, missions et déploiements.
 
-# 📚 Description
-Ce repository propose des cours d'initiation au deep learning se basant sur des notebooks.
-Pour un débutant, les cours sont à faire dans l'ordre pour une meilleur compréhension globale. 
+## Rôles
+### Système
+* [SYSTEMDREAM](https://github.com/universmc/systemDream): Système de rêve - Contient les composants de simulation et d'analyse des données liées aux rêves
+* [QUANTUM_ECHO](https://github.com/universmc/quantumEcho): Écho quantique - Implémentation de l'algorithme Quantum Echo pour la classification et l'analyse des données
+* [MISTRAL](https://github.com/universmc/Mistral): Vent maître - Bibliothèque de moteur de vent d'animation pour les environnements immersifs
+* [GORQ](https://github.com/universmc/groq): Gestionnaire de file d'attente - Microservice de gestion de files d'attente distribuées pour les systèmes complexes
+* [CLOUD](https://github.com/universmc/Cloud): Infrastructure cloud - Déploiement automatisé d'infrastructure cloud pour l'hébergement de microservices
 
-## 🛠️ Installation de l'environnement de travail 
-L'ensemble des library nécessaires pour le cours sont disponibles dans requirements.txt, vous pouvez choisir d'installer tout d'un coup ou au fur et à mesure de votre avancement dans le cours.   
-Il est conseillé d'utiliser un environnement de travail conda pour éviter tout conflit avec des library déjà installé sur votre ordinateur.  
+### Assistant
+* [PI](https://github.com/universmc/Pi): Assistant personnel - Bibliothèque d'IA personnalisée pour la prise de décision contextuelle et l'interaction intelligente
+* [IA](https://github.com/universmc/ia): Intelligence artificielle - Répertoire des modèles d'IA et de leur documentation pour différentes applications
+* [IA_STORY](https://github.com/universmc/ia-story): Histoires d'IA - Outils d'aide à la création d'histoires pour l'entraînement des modèles d'IA
 
-```
-`pip install -r requirements.txt`
-```
+### Utilisateur
+* [NEOFS](https://github.com/universmc/neofs): Système de fichiers Neo - Implémentation d'un système de fichiers distribué pour les applications à grande échelle
+* [ZIRA](https://github.com/universmc/zira): Assistant de voyage - Application mobile de recommandation de voyage basée sur l'IA
 
-# 🗺️ Plan du cours
-## 1. 🏗️ Fondations
-Le premier cours "Fondations" introduit les bases de l'optimisation par descente du gradient avec une compréhension intuitive. La règle de la chaîne est introduite puis un premier exemple de regression logistique est présenté. 
+## Projets
+* [UMC](https://github.com/universmc/umc): Projet UMC - Dépôt principal du projet UMC contenant le code source, les plans de projet et la documentation
+* [UMC_TOKENS](https://github.com/universmc/umcTokens): Tokens de l'UMC - Implémentation des tokens de sécurité pour l'authentification et l'autorisation dans les applications UMC
 
-## 2. 🧠 Réseau Fully Connected
-Le deuxième cours "RéseauFullyConnected" introduit le fonctionnement d'un réseau de neurones avec d'abord un exemple d'un réseau codé avec [micrograd](https://github.com/karpathy/micrograd/tree/master) pour permettre d'explorer cette library pour bien comprendre le fonctionnement. Une version française MicrogradFR est disponible dans ce repository.   
-Ensuite, pour introduire la library pytorch, le même exemple est reconstruit mais en utilisant pytorch au lieu de micrograd.  
-Le dernier notebook de cette partie introduit des techniques avancées d'entraînement de réseau de neurones qu'il est utile de connaître pour améliorer les performances de nos réseaux. 
+## Missions
+* [STARSEED](https://github.com/universmc/StarSeed): Mission Starseed - Dépôt contenant les ressources, les plans et les développements liés à la mission Starseed
+* [STARTWARK](https://github.com/universmc/SartWalk): Parcours de démarrage - Dépôt dédié au développement d'un parcours de démarrage et d'accueil pour les nouveaux utilisateurs
 
-## 3. 🖼️ Réseaux convolutifs
-Le troisième cours "RéseauConvolutifs" aborde tout d'abord le principe de fonctionnement des couches de convolution puis montre comment on les utilise au sein d'un réseau de neurones. Plusieurs exemples sont ensuite abordés pour montrer les capacités d'un réseau convolutif : classification sur MNIST, classification sur CIFAR-10 et segmentation sur "Oxford-IIIT Pet Dataset". 
-
-## 4. 🔄 Autoencodeurs
-Le quatrième cours "Autoencodeurs" aborde la notion d'entraînement non supervisé en présentant les différences entre supervisé et non supervisé. L'exemple de l'autoencodeur est ensuite abordé ainsi que son application pour la détection d'anomalies non supervisée. Pour finir, un notebook montre le potentiel de l'autoencodeur pour le problème du "denoising". 
-
-## 5. 🗨️ NLP
-Le cinquième cours "NLP" est grandement inspiré de la série de vidéo de Andrej Karpathy ["Building makemore"](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) qui traîte les NLP avec une approche de prédiction du prochain token. Le cours aborde d'abord des modèles très simples pour avoir une intuition sur le traîtement de données discrètes avec un réseau neurones puis les modèles se complexifient petit à petit. 
-
-## 6. 🤗 Hugging Face
-Le sixième cours "HuggingFace" est dédié à une exploration des librarys, des modèles, des datasets et autres de [Hugging Face](https://huggingface.co/). C'est une plateforme regroupant énormement des modèles open source pour une grande variété de tâches avec une library pour les implémenter rapidement et efficacement en python. Le cours présente d'abord le site de Hugging Face pour ensuite présenter les fonctionnalités des différentes librarys (transformers et diffusers principalement) sur différents cas d'usage. Le dernier notebook présente brièvement gradio, une library pour créer des interfaces simples de démo.
-
-## 7. 🤖 Transformers
-Le septième cours "Transformers" est dédié à l'architecture du transformers. Après avoir vu ses applications dans le cours précédent. Nous allons entrer dans le détail de l'architecture pour en comprendre les mécanismes. Le premier notebook est grandement inspiré de la vidéo [Let's build GPT](https://www.youtube.com/watch?v=kCc8FmEb1nY&t=1806s&ab_channel=AndrejKarpathy) de Andrej Karpathy et propose une implémentation pas à pas d'un encodeur transformers. Le but de ce notebook sera de créer un modèle capable de générer du "Molière" automatiquement. La seconde partie est une approche plus mathématique et la présentation de la partie encodeur du transformers. La troisième partie présente des architectures de modèle reposant sur la couche transformers pour de nombreux cas d'applications (Vision, traduction etc ...). Enfin, une dernière partie propose une implémentation du vision transformer à partir de l'article original.
-
-## 8. 🔍 Detection
-Le huitième cours "Detection" présente le fonctionnement de la détection d'objets sur des images. L'introduction présente ce qu'est la détection et les deux méthodes classiques (two-stage et one-stage). Le notebook suivant propose une description précise du fonctionnement de [YOLO](https://arxiv.org/pdf/1506.02640) et le dernier notebook présente la library [ultralytics](https://www.ultralytics.com/) qui permet d'accèder aux modèles YOLO très simplement.
-
-## 9. 🎯 Entrainement contrastif
-Le neuvième cours "Entrainement contrastif" présente le concept de l'entraînement contrastif. Un premier notebook présente ce qu'est l'entraînement contrastif en se basant sur l'implémentation d'un article de "face verification". Le second notebook présente la place de l'entraînment contrastif dans le deep learning récent et notamment son intêret pour l'entrainement non supervisé. 
-
-## 10. 🤝 Transfer learning et distillation
-Le dixième cours "Transfer learning et distillation" présente deux concepts majeurs en deep learning : le transfer learning et la distillation des connaissances. La première partie de ce cours présente le transfer learning dans sa globalité puis propose une implémentation pratique. La seconde partie présente le concept de distillation des connaissances et ses variantes puis propose un cas d'application de la distillation des connaissances pour la détection d'anomalies non supervisée.
-
-## Bonus 🌟 Cours spécifiques
-Ce cours présente des concepts très intéressant à comprendre mais non essentiels dans une pratique courante du deep learning. Si vous êtes intéressé par comprendre le fonctionnement d'un réseau de neurones de manière plus approfondie et de découvrir la raison de l'utilisation de techniques comme la BatchNorm, les connexions résiduelles, les optimizers, le dropout, la data augmentation etc ..., ce cours est fait pour vous ! 
-
-# 📌 TODO
- - [x] Cours sur les fondations
- - [x] Cours sur les réseau fully connected 
- - [x] Cours sur les CNN  
- - [x] Cours sur les AutoEncoders 
- - [x] Cours sur le NLP (Karpathy makemore)
- - [x] Cours sur Hugging Face
- - [x] Cours sur les Transformers (Concept et applications sur NLP + vidéo karpathy)
- - [x] Cours sur la détection d'objets(Yolo principalement)
- - [x] Cours sur les RNN (inclu dans NLP)
- - [x] Cours sur le transfer learning et distillation 
- - [x] Cours sur le contrastive training (siamese nets, triplet loss, entrainement non supervisé)
- - [x] Cours spécifique sur l'initialisation 
- - [x] Cours spécifique sur BatchNorm 
- - [x] Cours spécifique sur Regularization (l2 et dropout)
- - [x] Cours spécifique sur les connections résiduelles 
- - [x] Cours spécifique sur les optimizers
- - [x] Cours spécifique sur la data augmentation
- - [ ] Cours sur la génération d'images
-
-
-**License**
-
-Ce travail est mis à disposition selon les termes de la licence MIT
+## Déploiements
+* [INSTAGRAM](https://github.com/universmc/instagram/): Page de réponse Instagram - Page de réponse de messages automatisés pour les interactions avec les utilisateurs sur Instagram
+* [SNAPCHAT](https://github.com/universmc/
